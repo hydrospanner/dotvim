@@ -24,7 +24,7 @@ syntax on
 set expandtab
 set shiftwidth=4
 set tabstop=4
-" set smartindent
+set cindent
 set softtabstop=4
 " Round indent to nearest multiple of 4
 set shiftround
