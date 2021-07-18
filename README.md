@@ -3,9 +3,13 @@
 To push this config to a new machine:
 
 ```shell
-$ cd
-$ git clone https://github.com/hydrospanner/dotvim.git .vim
-$ echo "runtime vimrc" > .vimrc
+cd
+git clone https://github.com/hydrospanner/dotvim.git .vim
+echo "runtime vimrc" > .vimrc
+# get the submodules (plugins)
+cd .vim
+git submodule init
+git submodule update
 ```
 
 ### Plugins
