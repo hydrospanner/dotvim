@@ -39,3 +39,9 @@ set showcmd
 
 " Show file title in terminal tab
 set title
+
+if has("autocmd")
+  " jump to the last position when reopening a file
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
