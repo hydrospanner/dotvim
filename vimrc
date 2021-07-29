@@ -5,6 +5,11 @@ set colorcolumn=80
 highlight ColorColumn term=reverse ctermbg=234 guibg=LightRed
 
 
+" Better searching
+set incsearch
+set showmatch
+set hlsearch
+
 " syntastic config
 let g:syntastic_python_checkers = ['flake8']
 "set statusline+=%#warningmsg#
