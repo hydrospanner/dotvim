@@ -12,7 +12,15 @@ git submodule init
 git submodule update
 ```
 
+To add new plugins:
+Load with Pathogen. Add repo as submodule
+
+```shell
+git submodule add <url> bundle/dir_name
+```
+
 ### Plugins
 
 - [VIM Syntastic](https://github.com/vim-syntastic/syntastic)
 - [VIM Airline](https://github.com/vim-airline/vim-airline)
+- [Editor Config](https://github.com/editorconfig/editorconfig-vim)
