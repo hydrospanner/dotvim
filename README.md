@@ -19,6 +19,12 @@ Load with Pathogen. Add repo as submodule
 git submodule add <url> bundle/dir_name
 ```
 
+To update plugins:
+
+```shell
+git submodule update --recursive --remote
+```
+
 ### Plugins
 
 - [VIM Syntastic](https://github.com/vim-syntastic/syntastic)
