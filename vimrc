@@ -1,6 +1,9 @@
 " Pull in pathogen
 execute pathogen#infect()
 
+" hot keys
+noremap <F12> <Esc>:syntax sync fromstart<CR>
+
 set colorcolumn=80
 highlight ColorColumn term=reverse ctermbg=234 guibg=LightRed
 
