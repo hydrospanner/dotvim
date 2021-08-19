@@ -15,9 +15,9 @@ set hlsearch
 
 " syntastic config
 let g:syntastic_python_checkers = ['flake8']
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -26,16 +26,18 @@ let g:syntastic_check_on_wq = 0
 " end syntastic config
 
 
+" misc
 syntax on
+set scrolloff=8
 
 " All tabs are expanded to 4 chars, and backspacing will remove 4 chars.
 set expandtab
 set shiftwidth=4
 set tabstop=4
-set cindent
 set softtabstop=4
 " Round indent to nearest multiple of 4
 set shiftround
+set cindent
 
 " front-end file type indentation
 autocmd FileType html,css,javascript,scss setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
