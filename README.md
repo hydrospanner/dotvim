@@ -30,3 +30,4 @@ git submodule update --recursive --remote
 - [VIM Syntastic](https://github.com/vim-syntastic/syntastic)
 - [VIM Airline](https://github.com/vim-airline/vim-airline)
 - [Editor Config](https://github.com/editorconfig/editorconfig-vim)
+- [VIM Closetag](https://github.com/alvan/vim-closetag)
