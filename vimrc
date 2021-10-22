@@ -26,7 +26,7 @@ let g:syntastic_check_on_wq = 0
 " end syntastic config
 
 " vim-closetag config
-let g:closetag_filetypes = 'html,pt'
+let g:closetag_filetypes = 'html,pt,javascript'
 
 " misc
 syntax on
