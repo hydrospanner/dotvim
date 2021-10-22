@@ -31,3 +31,5 @@ git submodule update --recursive --remote
 - [VIM Airline](https://github.com/vim-airline/vim-airline)
 - [Editor Config](https://github.com/editorconfig/editorconfig-vim)
 - [VIM Closetag](https://github.com/alvan/vim-closetag)
+- [onedark](https://github.com/joshdick/onedark.vim)
+- [vim-polyglot](https://github.com/sheerun/vim-polyglot)

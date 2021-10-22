@@ -28,8 +28,12 @@ let g:syntastic_check_on_wq = 0
 " vim-closetag config
 let g:closetag_filetypes = 'html,pt,javascript'
 
-" misc
+" syntax colors
 syntax on
+colorscheme onedark
+
+
+" misc
 set scrolloff=8
 
 " All tabs are expanded to 4 chars, and backspacing will remove 4 chars.
