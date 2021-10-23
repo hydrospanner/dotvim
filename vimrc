@@ -28,6 +28,12 @@ let g:syntastic_check_on_wq = 0
 " vim-closetag config
 let g:closetag_filetypes = 'html,pt,javascript'
 
+" vim-prettier
+packloadall
+" Toggle the autoformat setting based on whether a config file can be found
+let g:prettier#autoformat_config_present = 1
+let g:prettier#autoformat_require_pragma = 0
+
 " syntax colors
 syntax on
 colorscheme onedark
