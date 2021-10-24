@@ -1,5 +1,6 @@
 # VIM Config
 
+## Installation & updating
 To push this config to a new machine:
 
 ```shell
@@ -32,12 +33,20 @@ To update plugins to their latest commit:
 git submodule update --recursive --remote
 ```
 
-### Plugins
+## Plugins
 
-- [VIM Syntastic](https://github.com/vim-syntastic/syntastic)
-- [VIM Airline](https://github.com/vim-airline/vim-airline)
+### VIM Theme
+- [Airline](https://github.com/vim-airline/vim-airline)
+    - [Fugitive](https://github.com/tpope/vim-fugitive) Git magic
+
+### Code formatters
 - [Editor Config](https://github.com/editorconfig/editorconfig-vim)
-- [VIM Closetag](https://github.com/alvan/vim-closetag)
-- [onedark](https://github.com/joshdick/onedark.vim)
-- [vim-polyglot](https://github.com/sheerun/vim-polyglot)
-- [vim-prettier](https://github.com/prettier/vim-prettier)
+- [Prettier](https://github.com/prettier/vim-prettier)
+
+### Syntax colors
+- [Onedark](https://github.com/joshdick/onedark.vim)
+    - [Polyglot](https://github.com/sheerun/vim-polyglot)
+
+### Productivity
+- [Closetag](https://github.com/alvan/vim-closetag) auto close HTML tags
+- [Syntastic](https://github.com/vim-syntastic/syntastic) lint
