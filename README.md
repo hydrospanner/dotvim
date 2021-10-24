@@ -13,13 +13,20 @@ git submodule update
 ```
 
 To add new plugins:
-Load with Pathogen. Add repo as submodule
+Load plugins with Pathogen. Add repo as submodule in `bundle/`
 
 ```shell
 git submodule add <url> bundle/dir_name
 ```
 
-To update plugins:
+To pull in new submodules to their pinned commit:
+```shell
+git pull
+git submodule init
+git submodule update
+```
+
+To update plugins to their latest commit:
 
 ```shell
 git submodule update --recursive --remote
@@ -33,3 +40,4 @@ git submodule update --recursive --remote
 - [VIM Closetag](https://github.com/alvan/vim-closetag)
 - [onedark](https://github.com/joshdick/onedark.vim)
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot)
+- [vim-prettier](https://github.com/prettier/vim-prettier)

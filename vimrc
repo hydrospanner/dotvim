@@ -39,9 +39,7 @@ syntax on
 colorscheme onedark
 
 
-" misc
-set scrolloff=8
-
+" Indentation
 " All tabs are expanded to 4 chars, and backspacing will remove 4 chars.
 set expandtab
 set shiftwidth=4
@@ -56,14 +54,21 @@ inoremap # X<BS>#
 
 " front-end file type indentation
 autocmd FileType html,css,javascript,scss setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
-" Show what mode we are in
-set showmode
+
+
+" Terminal line
+" vim-airline already shows the mode
+set noshowmode
 
 " Show the command in the last line
 set showcmd
 
 " Show file title in terminal tab
 set title
+
+
+" misc
+set scrolloff=8
 
 if has("autocmd")
   " jump to the last position when reopening a file
