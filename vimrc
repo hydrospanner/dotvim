@@ -74,4 +74,7 @@ if has("autocmd")
   " jump to the last position when reopening a file
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
+
+  " file extension changes
+  au BufRead,BufNewFile *.pt set filetype=html
 endif
