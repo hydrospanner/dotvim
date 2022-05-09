@@ -47,10 +47,11 @@ set tabstop=4
 set softtabstop=4
 " Round indent to nearest multiple of 4
 set shiftround
-set smartindent
-" smartindent fix: Restore indent after typing hash. See
-" https://vim.fandom.com/wiki/Restoring_indent_after_typing_hash
-inoremap # X<BS>#
+
+" favor cindent over smartindent https://vim.fandom.com/wiki/Restoring_indent_after_typing_hash
+set cindent
+set cinkeys-=0#
+set indentkeys-=0#
 
 " front-end file type indentation
 autocmd FileType html,css,javascript,scss setlocal shiftwidth=2 softtabstop=2 tabstop=2 expandtab
