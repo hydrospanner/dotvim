@@ -1,5 +1,22 @@
-" Pull in pathogen
-execute pathogen#infect()
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+
+" vim-plug plugins
+call plug#begin('~//plugged')
+Plug 'vim-syntastic/syntastic'
+Plug 'vim-airline/vim-airline'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'alvan/vim-closetag'
+Plug 'sheerun/vim-polyglot'
+Plug 'joshdick/onedark.vim'
+Plug 'prettier/vim-prettier'
+Plug 'tpope/vim-fugitive'
+Plug 'jiangmiao/auto-pairs'
+Plug 'psf/black', { 'branch': 'stable' }
+call plug#end()
+
 
 " hot keys
 noremap <F12> <Esc>:syntax sync fromstart<CR>

@@ -7,31 +7,11 @@ To push this config to a new machine:
 cd
 git clone https://github.com/hydrospanner/dotvim.git .vim
 echo "runtime vimrc" > .vimrc
-# get the submodules (plugins)
-cd .vim
-git submodule init
-git submodule update
 ```
 
-To add new plugins:
-Load plugins with Pathogen. Add repo as submodule in `bundle/`
-
-```shell
-git submodule add <url> bundle/dir_name
-```
-
-To pull in new submodules to their pinned commit:
-```shell
-git pull
-git submodule init
-git submodule update
-```
-
-To update plugins to their latest commit:
-
-```shell
-git submodule update --recursive --remote
-```
+When Vim is opened, [Vim-Plug](https://github.com/junegunn/vim-plug)
+(included in this repo)
+will automatically install any missing plugins.
 
 ## Plugins
 
@@ -42,6 +22,7 @@ git submodule update --recursive --remote
 ### Code formatters
 - [Editor Config](https://github.com/editorconfig/editorconfig-vim)
 - [Prettier](https://github.com/prettier/vim-prettier)
+- [Black](https://github.com/psf/black/blob/stable/plugin/black.vim)
 
 ### Syntax colors
 - [Onedark](https://github.com/joshdick/onedark.vim)
@@ -49,4 +30,5 @@ git submodule update --recursive --remote
 
 ### Productivity
 - [Closetag](https://github.com/alvan/vim-closetag) auto close HTML tags
+- [Auto Pairs](https://github.com/jiangmiao/auto-pairs.git)
 - [Syntastic](https://github.com/vim-syntastic/syntastic) lint
