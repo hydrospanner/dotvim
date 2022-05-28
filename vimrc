@@ -45,11 +45,22 @@ let g:syntastic_check_on_wq = 0
 " vim-closetag config
 let g:closetag_filetypes = 'html,pt,javascript'
 
+" Formatters
 " vim-prettier
 packloadall
 " Toggle the autoformat setting based on whether a config file can be found
 let g:prettier#autoformat_config_present = 1
 let g:prettier#autoformat_require_pragma = 0
+
+" Black
+" Only run on Black projects. Look for black in path.
+if executable('black')
+augroup black_on_save
+  autocmd!
+  autocmd BufWritePre *.py Black
+augroup end
+endif
+
 
 " syntax colors
 syntax on
